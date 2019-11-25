@@ -1,0 +1,116 @@
+.game-wrapper{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:70vh;
+    .adventure-card{
+        border:1px solid black;
+        padding:25px;
+        width:30vw;
+    }
+    .play-area{
+        border: 1px solid black;
+        background-color:white;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+        width:90%;
+        margin-left:25px;
+        
+        .char-form{
+            height:90%;
+            width:90%;
+
+            .display-window{
+                margin-bottom:10px;
+                height:250px;
+                
+                .display-text{
+                    width:100%;
+                    height:80%;
+                    border:1px solid black;
+                    
+                }
+                .player_input{
+                    height:30px;
+                    width:99%;
+                    text-align: start;
+                    text-justify: start;
+                    margin-bottom:10px;
+                }
+                
+                .input_btn{
+                    height:25px;
+                    width:100%;
+                    font-size:18px;
+                    background-color:crimson;
+                    color:white;
+                    font-weight:900;
+                }
+            }
+            .action-list{
+                display:flex;
+                width:100%;
+                margin-top:45px;
+                height:50%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                border:1px solid black;
+                padding:2px;
+                
+                .actions{
+                    border:1px solid black;
+                    display:flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    font-size:20px;
+                    height:90%;
+                    width:50%;
+                    
+                    padding:10px;
+ 
+                    
+                    div{
+                        width:85%;
+                        display:flex;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+                }
+                .input-box{
+                    padding:10px;
+
+                    display:flex;
+                    width:50%;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    
+                    .inventory-card{
+                        padding-left:25px;
+                        height:100%;
+                        margin-right:25px;
+                        width:300px;
+                        display:flex;
+                        flex-direction:column;
+                        justify-content: flex-start;
+                        align-items:flex-start;
+                        h1{
+                            margin-bottom:0px;
+                            margin-top:-30px;
+                        }
+                    }
+                    .palyer-input{
+                        margin-left:25px;
+                        width:300px;
+                        height:85%;
+                        border:1px solid black;
+                        padding:5px;
+                    }
+                }
+            }
+        }
+    }
+}

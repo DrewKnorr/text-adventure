@@ -1,0 +1,18 @@
+.nav-wrapper{
+    width:99vw;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:40px;
+    margin-bottom:10vh;
+    background-color:brown;
+    .nav-link-wrapper{
+        margin:0px 15px 0px 15px;
+        a{
+            text-decoration: none;
+            font-size:25px;
+            font-weight:900;
+            color:goldenrod
+        }
+    }
+}
