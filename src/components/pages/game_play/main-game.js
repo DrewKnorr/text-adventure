@@ -29,15 +29,17 @@ export default class MainGame extends Component{
                 dexterity:this.props.player_stats.dexterity,
                 points:0,
                 position:'center',
-                direction:'forward',
-                error:'messge'
+                direction:'forward'
             },
             scene:{
                 display_text:'Enter "Start Game" To Begin Your Adventure!\n'
             },
             level:0,
             levels:Levels,
-            first_time:true
+            first_time:true,
+            direction:'forward',
+            position:'1c',
+            error:''
         };
         this.handleInputCheck=this.handleInputCheck.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -64,7 +66,6 @@ export default class MainGame extends Component{
         let item = '';
         let action = '';
         let direction = '';
-        const active_level = this.state.levels[this.state.level];
         let temp_len ='';
 
         if (typeof player_input==='undefined'){
@@ -107,6 +108,10 @@ export default class MainGame extends Component{
         else {
             alert("Sorry We Couldn't Understand What You Said....\n Make Sure You Say Enough, But Not too Much...\n More Then One But Less Then Four Seems To Be The Trick!");
         }
+         
+        
+      
+    
     }
     
         
@@ -129,6 +134,7 @@ export default class MainGame extends Component{
 
 
     render(){
+        
         return(
             <div className="game-wrapper" >
                 <div className="adventure-card">
@@ -150,8 +156,9 @@ export default class MainGame extends Component{
                     <form className="char-form">
                         <div className="display-window">
                             <p className="display-text">{this.state.scene.display_text}</p>
-                            <input className="player_input"  name="player_input" type="text"  placeholder="Enter Action Here" onChange={this.handleInputChange}/>
-                            <button className="input_btn" value={document.getElementById("player_input")} type="submit" onClick={this.handleSubmit}>Enter Action</button>
+                            <p className="err-text">{this.state.error}</p>
+                            <input className="player_input"  name="player_input"  type="text" onChange={this.handleInputChange}/>
+                            <button className="input_btn" value={document.getElementById("player_input")} type="submit" onClick={this.handleSubmit} >Enter Action</button>
                         </div>
                         <div className="action-list">
                             

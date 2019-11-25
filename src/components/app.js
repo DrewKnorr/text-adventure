@@ -13,7 +13,7 @@ export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        <h1>Text-Adventure Game</h1>
+        <h1>Nature and Twisted Dreams</h1>
         <NavBar/>
         <Route exact path="/" component={Home}/>
         <Route path="/high-score" component={HighScore}/>
