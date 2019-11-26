@@ -6,6 +6,18 @@
     height:40px;
     margin-bottom:10vh;
     background-color:brown;
+    .icon-wrapper{
+        background-image:url("../../static/assets/images/nav-bar-icon.png");
+        height:60px;
+        width:60px;
+        background-color:goldenrod;
+        border-radius:50%;
+        padding:0px;
+        background-size:140% 140%;
+        background-position: center;
+        border:1px solid black;
+        
+    }
     .nav-link-wrapper{
         margin:0px 15px 0px 15px;
         a{
@@ -14,5 +26,6 @@
             font-weight:900;
             color:goldenrod
         }
+        
     }
 }

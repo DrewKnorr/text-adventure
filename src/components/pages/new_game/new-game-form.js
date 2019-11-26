@@ -82,15 +82,8 @@ export default class NewGameForm extends Component {
             this.state.player_invintory.waist.push("Dagger")
         }
         else if(player_class ==="cleric"){
-            this.setState({
-                player_description:this.state.player_description,
-                player_invintory:{
-                    bag :["Prayer Beads","","","","","","","","",""],
-                    waist:["Mace","Tome","","",""],
-                    key_ring:[]
-                }
-            })
-            this.state.player_invintory.bag.push("Player Beads")
+           
+            this.state.player_invintory.bag.push("Prayer Beads")
             this.state.player_invintory.waist.push("Mace")
             this.state.player_invintory.waist.push("Tome")
         }
